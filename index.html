@@ -38,7 +38,6 @@
     line-height: 1.6;
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -86,7 +85,6 @@
   }
   .nav-cta:hover { background: #e55a1e !important; }
 
-  /* ── HERO ── */
   .hero {
     background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, #1e4fc4 100%);
     padding: 140px 48px 80px;
@@ -169,7 +167,6 @@
   }
   .hero-sub strong { color: #fff; font-weight: 700; }
 
-  /* ── DEMO BOX ── */
   .demo-box {
     background: var(--white);
     border-radius: 20px;
@@ -253,7 +250,6 @@
     color: var(--navy);
   }
 
-  /* ── STATS BAR ── */
   .stats-bar {
     background: var(--off-white);
     border-top: 1px solid var(--border);
@@ -284,7 +280,6 @@
     font-weight: 500;
   }
 
-  /* ── SECTIONS ── */
   section {
     padding: 80px 48px;
     max-width: 1160px;
@@ -317,7 +312,6 @@
     line-height: 1.7;
   }
 
-  /* ── HOW IT WORKS ── */
   .steps {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -374,7 +368,6 @@
     line-height: 1.65;
   }
 
-  /* ── PRICING ── */
   .pricing-section {
     background: var(--off-white);
     padding: 80px 48px;
@@ -491,7 +484,6 @@
   .check-yes { color: var(--green); font-size: 17px; font-weight: 700; flex-shrink:0; }
   .check-no { color: var(--border); font-size: 17px; flex-shrink:0; }
 
-  /* ── COMPARISON ── */
   .comparison {
     background: var(--navy);
     padding: 80px 48px;
@@ -568,251 +560,6 @@
   .warn { color: #f6ad55 !important; }
   .good { color: #68d391 !important; }
 
-  /* ── PLATFORM STACK ── */
-  .stack-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 18px;
-    margin-top: 48px;
-  }
-
-  .stack-card {
-    background: var(--white);
-    border: 2px solid var(--border);
-    border-radius: 14px;
-    padding: 24px 22px;
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    transition: all 0.2s;
-    box-shadow: var(--card-shadow);
-  }
-
-  .stack-card:hover {
-    border-color: var(--blue-light);
-    box-shadow: var(--card-shadow-hover);
-  }
-
-  .stack-icon {
-    width: 48px; height: 48px;
-    background: var(--off-white);
-    border: 2px solid var(--border);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    flex-shrink: 0;
-  }
-
-  .stack-info h4 {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--navy);
-    margin-bottom: 4px;
-  }
-
-  .stack-info p {
-    font-size: 13px;
-    color: var(--text-mid);
-    line-height: 1.55;
-    margin-bottom: 10px;
-  }
-
-  .stack-cost {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--green);
-    background: var(--green-light);
-    padding: 4px 12px;
-    border-radius: 100px;
-    display: inline-block;
-  }
-
-  /* ── SCALE CALCULATOR ── */
-  .scale-section {
-    background: var(--off-white);
-    padding: 80px 48px;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .scale-inner { max-width: 1160px; margin: 0 auto; }
-
-  .calc-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-top: 48px;
-  }
-
-  .calc-card {
-    background: var(--white);
-    border: 2px solid var(--border);
-    border-radius: 16px;
-    padding: 28px 22px;
-    text-align: center;
-    box-shadow: var(--card-shadow);
-    transition: all 0.2s;
-  }
-
-  .calc-card:hover {
-    border-color: var(--blue-light);
-    transform: translateY(-3px);
-    box-shadow: var(--card-shadow-hover);
-  }
-
-  .calc-clients {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 52px;
-    font-weight: 900;
-    color: var(--navy);
-    line-height: 1;
-  }
-
-  .calc-label {
-    font-size: 12px;
-    color: var(--text-light);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 4px 0 18px;
-  }
-
-  .calc-row {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    padding: 7px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .calc-row:last-child { border-bottom: none; }
-  .calc-row .key { color: var(--text-mid); }
-  .calc-row .val { font-weight: 700; color: var(--text); }
-  .calc-row .val.green { color: var(--green); }
-  .calc-row .val.red { color: var(--red); }
-
-  /* ── SIGNUP ── */
-  .signup-section {
-    background: var(--white);
-    padding: 80px 48px;
-  }
-
-  .signup-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 72px;
-    align-items: start;
-  }
-
-  .signup-left .section-title { font-size: clamp(28px, 4vw, 46px); }
-
-  .trust-list {
-    list-style: none;
-    margin-top: 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .trust-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 15px;
-    color: var(--text-mid);
-    font-weight: 500;
-  }
-
-  .trust-icon {
-    width: 28px; height: 28px;
-    background: var(--green-light);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--green);
-    font-size: 14px;
-    font-weight: 700;
-    flex-shrink: 0;
-  }
-
-  .form-card {
-    background: var(--white);
-    border: 2px solid var(--border);
-    border-radius: 20px;
-    padding: 40px 36px;
-    box-shadow: var(--card-shadow-hover);
-  }
-
-  .form-card h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    font-weight: 800;
-    color: var(--navy);
-    margin-bottom: 24px;
-  }
-
-  .form-group { margin-bottom: 16px; }
-
-  .form-group label {
-    display: block;
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
-
-  .form-group input,
-  .form-group select {
-    width: 100%;
-    background: var(--off-white);
-    border: 2px solid var(--border);
-    border-radius: 8px;
-    padding: 13px 16px;
-    color: var(--text);
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    transition: border-color 0.2s;
-    outline: none;
-    -webkit-appearance: none;
-  }
-
-  .form-group input:focus,
-  .form-group select:focus {
-    border-color: var(--blue-light);
-    background: var(--white);
-  }
-
-  .form-group input::placeholder { color: var(--text-light); }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--navy);
-    padding: 36px 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  footer .logo { font-size: 22px; }
-
-  footer p {
-    font-size: 13px;
-    color: rgba(255,255,255,0.55);
-  }
-
-  footer a {
-    color: rgba(255,255,255,0.55);
-    text-decoration: none;
-  }
-  footer a:hover { color: var(--white); }
-
-  /* ── SPAM SECTION ── */
   .spam-section {
     background: var(--navy);
     padding: 80px 48px;
@@ -995,14 +742,6 @@
     box-shadow: 0 8px 24px rgba(255,107,43,0.40);
   }
 
-  @media (max-width: 768px) {
-    .spam-section { padding: 56px 24px; }
-    .spam-grid { grid-template-columns: 1fr; gap: 24px; }
-    .spam-types { grid-template-columns: 1fr; }
-    .spam-cta-bar { flex-direction: column; text-align: center; }
-  }
-
-  /* ── SCALES SECTION ── */
   .scales-section {
     background: var(--white);
     padding: 80px 48px;
@@ -1135,7 +874,6 @@
     line-height: 1.6;
   }
 
-  /* MULTI-LOCATION PRICING CARD */
   .price-card.enterprise {
     background: linear-gradient(160deg, #0f2657, #1a3fa0);
     border-color: var(--navy);
@@ -1154,16 +892,11 @@
   .price-card.enterprise .price-amount { color: #ff9d75; }
   .price-card.enterprise .price-amount span { color: rgba(255,255,255,0.50); }
   .price-card.enterprise .price-desc { color: rgba(255,255,255,0.75); }
-
   .price-card.enterprise .price-features li {
     color: rgba(255,255,255,0.75);
     border-bottom-color: rgba(255,255,255,0.10);
   }
-
-  .price-card.enterprise .price-features li.included {
-    color: var(--white);
-  }
-
+  .price-card.enterprise .price-features li.included { color: var(--white); }
   .price-card.enterprise .check-yes { color: #68d391; }
   .price-card.enterprise .check-no { color: rgba(255,255,255,0.20); }
 
@@ -1259,19 +992,130 @@
     background: rgba(255,255,255,0.08);
   }
 
-  @media (max-width: 900px) {
-    .scale-spectrum { grid-template-columns: 1fr 1fr; }
-    .scale-tier { border-right: none; border-bottom: 1px solid var(--border); }
-    .price-card.enterprise { grid-template-columns: 1fr; }
-    .scales-section { padding: 56px 24px; }
-    .scales-callout { padding: 28px 24px; }
+  .signup-section {
+    background: var(--white);
+    padding: 80px 48px;
   }
 
-  @media (max-width: 768px) {
-    .scale-spectrum { grid-template-columns: 1fr; }
+  .signup-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: start;
   }
 
-  /* ── ANIMATIONS ── */
+  .signup-left .section-title { font-size: clamp(28px, 4vw, 46px); }
+
+  .trust-list {
+    list-style: none;
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .trust-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text-mid);
+    font-weight: 500;
+  }
+
+  .trust-icon {
+    width: 28px; height: 28px;
+    background: var(--green-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .form-card {
+    background: var(--white);
+    border: 2px solid var(--border);
+    border-radius: 20px;
+    padding: 40px 36px;
+    box-shadow: var(--card-shadow-hover);
+  }
+
+  .form-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .form-card .form-subtitle {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+  }
+
+  .form-group { margin-bottom: 16px; }
+
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    background: var(--off-white);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    padding: 13px 16px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    transition: border-color 0.2s;
+    outline: none;
+    -webkit-appearance: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus {
+    border-color: var(--blue-light);
+    background: var(--white);
+  }
+
+  .form-group input::placeholder { color: var(--text-light); }
+
+  footer {
+    background: var(--navy);
+    padding: 36px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  footer .logo { font-size: 22px; }
+
+  footer p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.55);
+  }
+
+  footer a {
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+  }
+  footer a:hover { color: var(--white); }
+
   @keyframes fadeUp {
     from { opacity:0; transform:translateY(22px); }
     to   { opacity:1; transform:translateY(0); }
@@ -1284,40 +1128,40 @@
   }
   .fade-up.visible { opacity:1; transform:translateY(0); }
 
-  /* ── MOBILE ── */
   @media (max-width: 768px) {
     nav { padding: 0 20px; }
     nav ul { display: none; }
-
     .hero { padding: 110px 24px 70px; }
     .hero h1 { font-size: 40px; }
     .demo-box { padding: 28px 24px; }
     .demo-number { font-size: 36px; }
-
     .stats-bar { padding: 40px 24px; gap: 36px; }
     .stat-num { font-size: 40px; }
-
     section { padding: 56px 24px; }
     .pricing-section { padding: 56px 24px; }
     .pricing-grid { grid-template-columns: 1fr; }
-
     .comparison { padding: 56px 24px; }
-    .compare-table { font-size: 13px; }
-    .compare-table th, .compare-table td { padding: 12px 12px; }
-
-    .scale-section { padding: 56px 24px; }
-    .calc-grid { grid-template-columns: repeat(2,1fr); }
-
+    .spam-section { padding: 56px 24px; }
+    .spam-grid { grid-template-columns: 1fr; gap: 24px; }
+    .spam-types { grid-template-columns: 1fr; }
+    .spam-cta-bar { flex-direction: column; text-align: center; }
+    .scales-section { padding: 56px 24px; }
+    .scale-spectrum { grid-template-columns: 1fr 1fr; }
+    .scale-tier { border-right: none; border-bottom: 1px solid var(--border); }
+    .price-card.enterprise { grid-template-columns: 1fr; }
+    .scales-callout { padding: 28px 24px; }
     .signup-section { padding: 56px 24px; }
     .signup-inner { grid-template-columns: 1fr; gap: 40px; }
-
     footer { padding: 28px 24px; flex-direction: column; text-align: center; }
+  }
+
+  @media (max-width: 480px) {
+    .scale-spectrum { grid-template-columns: 1fr; }
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo">YourCall<span>Covered</span></div>
   <ul>
@@ -1330,24 +1174,19 @@
   </ul>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-dots"></div>
-
   <div class="badge">
     <div class="pulse-dot"></div>
     AI Voice Agent — Live 24/7/365
   </div>
-
   <h1>REAL CALLS <span class="sky">ANSWERED.</span><br>SPAM CALLS <span class="orange">STOPPED.</span></h1>
-
   <p class="hero-sub">
     Miss even a few calls a week and you're losing jobs to competitors
     who answer first — on top of wasting hours every week on spam and telemarketers.
     One AI receptionist fixes both problems, 24/7,
     for less than you spend on coffee each month.
   </p>
-
   <div class="demo-box">
     <div class="demo-label">🎧 Live Demo — Call Right Now</div>
     <div class="demo-number">(888) 609-6585</div>
@@ -1361,7 +1200,6 @@
   </div>
 </div>
 
-<!-- STATS -->
 <div class="stats-bar">
   <div class="stat-item fade-up">
     <span class="stat-num">85%</span>
@@ -1381,109 +1219,59 @@
   </div>
 </div>
 
-<!-- SPAM SECTION -->
 <div class="spam-section" id="spam">
   <div class="spam-inner">
     <div class="section-label">🚫 Spam &amp; Telemarketer Shield</div>
     <h2 class="section-title fade-up">Tired of Answering<br>Junk Calls All Day?</h2>
     <p class="section-sub fade-up">
-      Up to 60% of your business calls are spam, robocalls, and telemarketers. 
-      You stop what you're doing, answer — and it's nobody. 
+      Up to 60% of your business calls are spam, robocalls, and telemarketers.
+      You stop what you're doing, answer — and it's nobody.
       Every single day. YourCallCovered stops them cold before they ever reach you.
     </p>
-
     <div class="spam-grid">
-
-      <!-- BEFORE -->
       <div class="spam-before fade-up">
-        <div class="spam-box-label">
-          ❌ Without YourCallCovered
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">📱</span>
-          <span>Phone rings — you stop what you're doing</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">🤦</span>
-          <span>You answer — it's a telemarketer or dead air robocall</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">🔁</span>
-          <span>Happens 10–20 times a day. Every day.</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">😤</span>
-          <span>You get phone fatigue. Start ignoring calls.</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">💸</span>
-          <span>A real customer calls — you ignore it thinking it's spam. They call your competitor instead.</span>
-        </div>
+        <div class="spam-box-label">❌ Without YourCallCovered</div>
+        <div class="spam-flow-item"><span class="flow-icon">📱</span><span>Phone rings — you stop what you're doing</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">🤦</span><span>You answer — it's a telemarketer or dead air robocall</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">🔁</span><span>Happens 10–20 times a day. Every day.</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">😤</span><span>You get phone fatigue. Start ignoring calls.</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">💸</span><span>A real customer calls — you ignore it thinking it's spam. They call your competitor instead.</span></div>
       </div>
-
-      <!-- AFTER -->
       <div class="spam-after fade-up">
-        <div class="spam-box-label">
-          ✅ With YourCallCovered
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">📱</span>
-          <span>Phone rings — your AI agent answers instantly</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">🤖</span>
-          <span>Robocall? Silence = call dropped automatically. Done.</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">🚫</span>
-          <span>Telemarketer? Agent screens them, they hang up. You never know they called.</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">⭐</span>
-          <span>Real customer? Fully handled — FAQs answered, message taken, appointment booked.</span>
-        </div>
-        <div class="spam-flow-item">
-          <span class="flow-icon">📩</span>
-          <span>You only get a text when it's a real lead worth calling back. Nothing else.</span>
-        </div>
+        <div class="spam-box-label">✅ With YourCallCovered</div>
+        <div class="spam-flow-item"><span class="flow-icon">📱</span><span>Phone rings — your AI agent answers instantly</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">🤖</span><span>Robocall? Silence = call dropped automatically. Done.</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">🚫</span><span>Telemarketer? Agent screens them, they hang up. You never know they called.</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">⭐</span><span>Real customer? Fully handled — FAQs answered, message taken, appointment booked.</span></div>
+        <div class="spam-flow-item"><span class="flow-icon">📩</span><span>You only get a text when it's a real lead worth calling back. Nothing else.</span></div>
       </div>
-
     </div>
-
-    <!-- SPAM TYPES GRID -->
     <div class="spam-types">
-
       <div class="spam-type-card fade-up">
         <span class="spam-type-icon">🤖</span>
         <h4>Robocalls &amp; Dead Air</h4>
         <p>Automated calls that play a recording or stay silent. Your agent waits, gets no response, ends the call immediately.</p>
         <div class="spam-result">✓ Blocked instantly</div>
       </div>
-
       <div class="spam-type-card fade-up">
         <span class="spam-type-icon">📢</span>
         <h4>Telemarketers</h4>
         <p>Sales pitches for products and services you didn't ask for. Your agent screens them — most hang up the moment they realize a human isn't on the line.</p>
         <div class="spam-result">✓ Screened out</div>
       </div>
-
       <div class="spam-type-card fade-up">
         <span class="spam-type-icon">⚠️</span>
         <h4>Scam Callers</h4>
         <p>"Your business listing is about to expire..." Your AI agent doesn't get flustered, doesn't get tricked, and never confirms sensitive business info.</p>
         <div class="spam-result">✓ Zero info given</div>
       </div>
-
       <div class="spam-type-card fade-up">
         <span class="spam-type-icon">🔄</span>
         <h4>Repeat Spam Numbers</h4>
         <p>The same numbers that call over and over. Logged automatically so you can see the pattern — and they never waste another second of your time.</p>
         <div class="spam-result">✓ Logged &amp; filtered</div>
       </div>
-
     </div>
-
-    <!-- BOTTOM CTA BAR -->
     <div class="spam-cta-bar fade-up">
       <div>
         <h3>Stop Answering Spam. Start Answering Customers.</h3>
@@ -1491,11 +1279,9 @@
       </div>
       <a href="tel:8886096585" class="btn-orange">📞 Call the Demo Free</a>
     </div>
-
   </div>
 </div>
 
-<!-- SCALES FOR ANY BUSINESS -->
 <div class="scales-section" id="scales">
   <div class="scales-inner">
     <div class="section-label">Built for Every Business</div>
@@ -1505,48 +1291,38 @@
       that needs consistent coverage everywhere. YourCallCovered scales to fit every business
       at a price that always makes sense.
     </p>
-
-    <!-- SPECTRUM -->
     <div class="scale-spectrum fade-up">
-
       <div class="scale-tier">
         <span class="scale-emoji">🔧</span>
         <h4>Solo Operator</h4>
         <p>You ARE the business. You're on the job and can't answer. Every missed call is a missed paycheck.</p>
         <div class="scale-price-tag">From $79/mo</div>
       </div>
-
       <div class="scale-tier highlight">
         <span class="scale-emoji">🏠</span>
         <h4>Small Team<br>2–10 People</h4>
         <p>Everyone's juggling too much. No one dedicated to phones. Inconsistent customer experience killing your reputation.</p>
         <div class="scale-price-tag">From $79/mo</div>
       </div>
-
       <div class="scale-tier">
         <span class="scale-emoji">📈</span>
         <h4>Growing Business<br>10–50 People</h4>
         <p>You have a receptionist — but she goes home at 5. The AI fills every gap, handles overflow, and never calls in sick.</p>
         <div class="scale-price-tag">From $179/mo</div>
       </div>
-
       <div class="scale-tier highlight">
         <span class="scale-emoji">🏢</span>
         <h4>Multi-Location<br>or Franchise</h4>
         <p>Each location gets its own agent, its own knowledge base, its own routing — managed centrally by you.</p>
         <div class="scale-price-tag">From $299/location</div>
       </div>
-
       <div class="scale-tier">
         <span class="scale-emoji">🏗️</span>
         <h4>Enterprise &amp;<br>High Volume</h4>
         <p>Hundreds of calls a day. AI handles tier-one calls entirely, routes only what needs a human. Slash staffing costs.</p>
         <div class="scale-price-tag">Custom Pricing</div>
       </div>
-
     </div>
-
-    <!-- INDUSTRY PILLS -->
     <div class="section-label" style="margin-top:52px; margin-bottom:16px">Works Across Every Industry</div>
     <div class="scale-industries fade-up">
       <div class="industry-pill"><span>🔧</span> Plumbing &amp; HVAC</div>
@@ -1566,8 +1342,6 @@
       <div class="industry-pill"><span>🐾</span> Veterinary Clinics</div>
       <div class="industry-pill"><span>🏋️</span> Gyms &amp; Fitness</div>
     </div>
-
-    <!-- CALLOUT -->
     <div class="scales-callout fade-up">
       <div>
         <h3>If Your Business Has a Phone — You Need This.</h3>
@@ -1577,26 +1351,23 @@
         📞 Hear It Live — Free Demo
       </a>
     </div>
-
   </div>
 </div>
 
-<!-- HOW IT WORKS -->
 <section id="how">
   <div class="section-label">The Process</div>
   <h2 class="section-title fade-up">Up and Running<br>in 24 Hours</h2>
   <p class="section-sub fade-up">No complicated setup. No tech skills needed. We handle everything end to end.</p>
-
   <div class="steps">
     <div class="step fade-up">
       <div class="step-num">01</div>
-      <h3>Sign Up & Pay</h3>
-      <p>Pick your plan and enter your info. Takes 3 minutes. No contracts — cancel anytime.</p>
+      <h3>Fill Out Your Profile</h3>
+      <p>Tell us about your business — services, hours, and FAQs. Takes 3 minutes. No payment required to start.</p>
     </div>
     <div class="step fade-up">
       <div class="step-num">02</div>
-      <h3>Fill Your Profile</h3>
-      <p>Tell us your hours, services, and top FAQs. We pre-fill it from your website — you just confirm.</p>
+      <h3>We Build Your Agent</h3>
+      <p>Our team sets up your personal AI receptionist within 24 hours, customized to your business.</p>
     </div>
     <div class="step fade-up">
       <div class="step-num">03</div>
@@ -1611,15 +1382,13 @@
   </div>
 </section>
 
-<!-- PRICING -->
 <div class="pricing-section" id="pricing">
   <div class="pricing-inner">
     <div class="section-label">Plans</div>
     <h2 class="section-title fade-up">Simple, Honest Pricing</h2>
-    <p class="section-sub fade-up">Start with what you need. Upgrade when you're ready. No hidden fees, ever.</p>
+    <p class="section-sub fade-up">Start your 7-day free trial today. No credit card required. Pick your plan after you see it working.</p>
 
     <div class="pricing-grid">
-
       <div class="price-card fade-up">
         <div class="price-tier">Tier 1</div>
         <div class="price-name">Just Answer</div>
@@ -1635,7 +1404,7 @@
           <li><span class="check-no">—</span> Appointment scheduling</li>
           <li><span class="check-no">—</span> CRM integration</li>
         </ul>
-        <a href="https://buy.stripe.com/9B64gzg9x4bP3kydkZ4c801" target="_blank" class="btn-secondary">Get Started — $79/mo</a>
+        <a href="#signup" class="btn-secondary">Start Free Trial — $79/mo after</a>
       </div>
 
       <div class="price-card featured fade-up">
@@ -1654,7 +1423,7 @@
           <li class="included"><span class="check-yes">✓</span> Call transcripts</li>
           <li><span class="check-no">—</span> CRM integration</li>
         </ul>
-        <a href="#signup" class="btn-primary">Get Started</a>
+        <a href="#signup" class="btn-primary">Start Free Trial</a>
       </div>
 
       <div class="price-card fade-up">
@@ -1672,13 +1441,11 @@
           <li class="included"><span class="check-yes">✓</span> Priority support</li>
           <li class="included"><span class="check-yes">✓</span> Monthly report</li>
         </ul>
-        <a href="https://buy.stripe.com/eVqcN53mLaAd3kybcR4c803" target="_blank" class="btn-secondary">Get Started — $349/mo</a>
+        <a href="#signup" class="btn-secondary">Start Free Trial — $349/mo after</a>
       </div>
 
-      <!-- MULTI-LOCATION / ENTERPRISE -->
       <div class="price-card enterprise fade-up">
         <div class="enterprise-badge">🏢 Multi-Location &amp; Enterprise</div>
-
         <div>
           <div class="price-tier">Tier 4</div>
           <div class="price-name">Multi-Location</div>
@@ -1690,7 +1457,6 @@
             <div class="location-bubble"><strong>10+</strong> locations<br><small style="font-size:11px;color:rgba(255,255,255,0.55)">Custom rate</small></div>
           </div>
         </div>
-
         <div>
           <ul class="price-features" style="margin-top:8px">
             <li class="included"><span class="check-yes">✓</span> Everything in Full Service</li>
@@ -1702,7 +1468,6 @@
             <li class="included"><span class="check-yes">✓</span> Volume discounts at 10+ locations</li>
           </ul>
         </div>
-
         <div style="display:flex; flex-direction:column; justify-content:flex-end;">
           <p style="font-size:13px; color:rgba(255,255,255,0.60); margin-bottom:16px; line-height:1.6;">
             Perfect for franchise owners, property management companies, medical groups, law firms with multiple offices, and any business with more than one location.
@@ -1710,20 +1475,16 @@
           <a href="#signup" class="btn-white">Get a Multi-Location Quote →</a>
           <a href="tel:8886096585" class="btn-ghost-white">📞 Call &amp; Ask About Enterprise</a>
         </div>
-
       </div>
-
     </div>
   </div>
 </div>
 
-<!-- COMPARISON -->
 <div class="comparison" id="compare">
   <div class="comparison-inner">
     <div class="section-label">The Math</div>
     <h2 class="section-title fade-up">Why This Is a<br>No-Brainer</h2>
     <p class="section-sub fade-up">Compare what you'd pay to cover your phones any other way.</p>
-
     <table class="compare-table fade-up">
       <thead>
         <tr>
@@ -1768,13 +1529,12 @@
   </div>
 </div>
 
-<!-- SIGNUP -->
 <div class="signup-section" id="signup">
   <div class="signup-inner">
     <div class="signup-left">
       <div class="section-label">Get Started Today</div>
       <h2 class="section-title fade-up">Your AI Receptionist Is Ready.</h2>
-      <p class="section-sub fade-up">Fill out the form, pick your plan, and your agent is live within 24 hours. No tech skills needed.</p>
+      <p class="section-sub fade-up">Fill out the form below and we'll have your agent live within 24 hours. No credit card needed to start.</p>
       <ul class="trust-list fade-up">
         <li><div class="trust-icon">✓</div> 7-day free trial — no card required</li>
         <li><div class="trust-icon">✓</div> Live within 24 hours of signup</li>
@@ -1787,58 +1547,60 @@
 
     <div class="form-card fade-up">
       <h3>Start Your Free Trial</h3>
-      <div class="form-group">
-        <label>Your Name</label>
-        <input type="text" placeholder="John Smith">
-      </div>
-      <div class="form-group">
-        <label>Business Name</label>
-        <input type="text" placeholder="Smith's Plumbing LLC">
-      </div>
-      <div class="form-group">
-        <label>Business Type</label>
-        <select>
-          <option value="">Select your industry...</option>
-          <option>Plumbing / HVAC / Electrical</option>
-          <option>Medical / Dental / Therapy</option>
-          <option>Legal</option>
-          <option>Real Estate</option>
-          <option>Salon / Spa / Beauty</option>
-          <option>Restaurant / Food Service</option>
-          <option>Landscaping / Lawn Care</option>
-          <option>Auto Repair / Detailing</option>
-          <option>General Contractor</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Business Phone Number</label>
-        <input type="tel" placeholder="(888) 609-6585">
-      </div>
-      <div class="form-group">
-        <label>Email Address</label>
-        <input type="email" placeholder="john@smithsplumbing.com">
-      </div>
-      <div class="form-group">
-        <label>Which Plan Interests You?</label>
-        <select>
-          <option>Just Answer — $79/mo</option>
-          <option selected>Answer + Book — $179/mo (Most Popular)</option>
-          <option>Full Service — $349/mo</option>
-          <option>Not sure yet — show me options</option>
-        </select>
-      </div>
-      <button class="btn-primary" style="margin-top:10px" onclick="handleSignup()">
-        Start My Free Trial &nbsp;→
-      </button>
-      <p style="font-size:12px; color:var(--text-light); text-align:center; margin-top:14px">
-        No credit card required. 7 days free. Cancel anytime.
-      </p>
+      <p class="form-subtitle">No credit card required. We'll reach out within 24 hours to get you set up.</p>
+      <form action="https://formspree.io/f/mzdqayok" method="POST">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" name="name" placeholder="John Smith" required>
+        </div>
+        <div class="form-group">
+          <label>Business Name *</label>
+          <input type="text" name="business_name" placeholder="Smith's Plumbing LLC" required>
+        </div>
+        <div class="form-group">
+          <label>Business Type *</label>
+          <select name="business_type" required>
+            <option value="">Select your industry...</option>
+            <option>Plumbing / HVAC / Electrical</option>
+            <option>Medical / Dental / Therapy</option>
+            <option>Legal</option>
+            <option>Real Estate</option>
+            <option>Salon / Spa / Beauty</option>
+            <option>Restaurant / Food Service</option>
+            <option>Landscaping / Lawn Care</option>
+            <option>Auto Repair / Detailing</option>
+            <option>General Contractor</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Business Phone Number *</label>
+          <input type="tel" name="phone" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="john@smithsplumbing.com" required>
+        </div>
+        <div class="form-group">
+          <label>Which Plan Interests You?</label>
+          <select name="plan_interest">
+            <option value="Just Answer — $79/mo">Just Answer — $79/mo</option>
+            <option value="Answer + Book — $179/mo" selected>Answer + Book — $179/mo (Most Popular)</option>
+            <option value="Full Service — $349/mo">Full Service — $349/mo</option>
+            <option value="Not sure yet">Not sure yet — show me options</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="margin-top:10px">
+          Start My Free Trial &nbsp;→
+        </button>
+        <p style="font-size:12px; color:var(--text-light); text-align:center; margin-top:14px">
+          No credit card required. 7 days free. Cancel anytime.
+        </p>
+      </form>
     </div>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="logo">YourCall<span>Covered</span></div>
   <p>© 2026 YourCallCovered. Built for small businesses that mean business.</p>
@@ -1852,19 +1614,5 @@
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
 
-<script>
-function handleSignup() {
-  const plan = document.querySelector('select:last-of-type').value;
-  if (plan.includes('$79') || plan.includes('Just Answer')) {
-    window.open('https://buy.stripe.com/9B64gzg9x4bP3kydkZ4c801', '_blank');
-  } else if (plan.includes('$179') || plan.includes('Answer + Book')) {
-    window.open('https://buy.stripe.com/6oU28rf5t9w9cV83Kp4c802', '_blank');
-  } else if (plan.includes('$349') || plan.includes('Full Service')) {
-    window.open('https://buy.stripe.com/eVqcN53mLaAd3kybcR4c803', '_blank');
-  } else {
-    window.open('https://buy.stripe.com/6oU28rf5t9w9cV83Kp4c802', '_blank');
-  }
-}
-</script>
 </body>
 </html>
