@@ -18,27 +18,29 @@ exports.handler = async (event) => {
       `Summary:`,
       summary
     ].filter(Boolean).join("\n");
-    const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+    const BREVO_API_KEY = process.env.BREVO_API_KEY;
     const TO_EMAIL = "yourcallcovered@gmail.com";
     const FROM_EMAIL = process.env.FROM_EMAIL;
-    if (!SENDGRID_API_KEY || !FROM_EMAIL) {
+    if (!BREVO_API_KEY || !FROM_EMAIL) {
       return { statusCode: 500, body: "Missing env vars" };
     }
-    const resp = await fetch("https://api.sendgrid.com/v3/mail/send", {
+    const resp = await fetch("https://api.brevo.com/v3/smtp/email", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${SENDGRID_API_KEY}`,
-        "Content-Type": "application/json"
+        "api-key": BREVO_API_KEY,
+        "Content-Type": "application/json",
+        Accept: "application/json"
       },
       body: JSON.stringify({
-        personalizations: [{ to: [{ email: TO_EMAIL }], subject }],
-        from: { email: FROM_EMAIL },
-        content: [{ type: "text/plain", value: text }]
+        sender: { email: FROM_EMAIL },
+        to: [{ email: TO_EMAIL }],
+        subject,
+        textContent: text
       })
     });
     if (!resp.ok) {
       const errText = await resp.text();
-      return { statusCode: 500, body: `SendGrid error: ${resp.status} ${errText}` };
+      return { statusCode: 500, body: `Brevo error: ${resp.status} ${errText}` };
     }
     return { statusCode: 200, body: "ok" };
   } catch (e) {
